@@ -1,37 +1,42 @@
 {
-  "name": "quill-vuetified",
+  "name": "quill-vuetified-packages",
+  "private": true,
   "version": "0.0.1",
   "description": "A Vuetified Component Wrapper of Quill Editor with Typescript.",
-  "scripts": {},
-  "browser": "dist/index.js",
-  "typings": "dist/types/index.d.ts",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start --stream --parallel --scope '@linusborg/*'",
+    "play": "cd packages/playground && yarn start",
+    "lint": "lerna run lint -- --fix",
+    "build": "yarn workspaces run build",
+    "cypress": "cypress run --config-file cypress/cypress.json",
+    "cypress:open": "cypress open --config-file cypress/cypress.json",
+    "prepare": "husky install",
+    "clean": "lerna clean && rm -rf ./node_modules"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": "eslint --fix --max-warnings=0"
+  },
   "repository": "git@github.com:shijinyu/quill-vuetified.git",
   "author": "Jinyu Shi <sjym90@gmail.com>",
   "license": "MIT",
-  "files": [
-    "dist",
-    "lib"
-  ],
-  "keywords": [
-    "vue",
-    "vue2",
-    "quill",
-    "rich text",
-    "editor"
-  ],
+  "devDependencies": {
+    "@linusborg/eslint-config": "^0.1.1",
+    "@types/jest": "^26.0.20",
+    "babel-jest": "^27.0.6",
+    "cypress": "^8.0.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "husky": "^7.0.1",
+    "jest": "^27.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.0"
+  },
   "dependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.5",
-    "@babel/eslint-parser": "^7.15.7",
-    "@types/jest": "^27.0.2",
-    "@typescript-eslint/eslint-plugin": "^4.32.0",
-    "@typescript-eslint/parser": "^4.32.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "typescript": "^4.4.3",
-    "vue": "^2.6.14",
-    "vue-loader": "^15.9.8"
+    "ts-node": "^10.0.0"
   }
 }

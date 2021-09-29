@@ -1,41 +1,36 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "baseUrl": "./",
     "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
     "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
+    // trying to get auto `import type` insertion for type imports
+    // doesn't work so far: https://github.com/microsoft/TypeScript/pull/36412#issuecomment-707221008
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "error",
+    "declaration": true,
+    "sourceMap": true,   
+    "strict": true,
     "noUnusedLocals": false,
-    "noEmit": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "jsx": "preserve",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "disableSizeLimit": true,
-    "checkJs": false,
-    "baseUrl": ".",
+    "types": ["webpack-env",],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+      "quill-vuetified": ["packages/lib/src/main.ts"]
+    }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
+    "/config/*.ts",
+    "/**/src/**/*.ts",
+    "/**/src/**/*.js",
+    "/**/src/**/*.vue",
+    // "/cypress/**/*.js",
+    // necessary for un-breaking jest types broken by cypress' chai dependency
+    // https://github.com/cypress-io/cypress/issues/1087#issuecomment-353370449
+    // "./node_modules/jest", 
   ]
 }

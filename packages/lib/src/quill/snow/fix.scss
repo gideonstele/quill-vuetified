@@ -1,0 +1,139 @@
+.ql-snow .ql-picker.ql-size {
+  .ql-picker-label[data-value="12px"]::before,
+  .ql-picker-item[data-value="12px"]::before {
+    content: '12px';
+  }
+  .ql-picker-item[data-value="12px"]::before {
+    font-size: 12px;
+  }
+
+  .ql-picker-label[data-value="14px"]::before,
+  .ql-picker-item[data-value="14px"]::before {
+    content: '14px';
+  }
+  .ql-picker-item[data-value="14px"]::before {
+    font-size: 14px;
+  }
+
+  .ql-picker-label[data-value="16px"]::before,
+  .ql-picker-item[data-value="16px"]::before {
+    content: '16px';
+  }
+  .ql-picker-item[data-value="16px"]::before {
+    font-size: 16px;
+  }
+
+  .ql-picker-label[data-value="18px"]::before,
+  .ql-picker-item[data-value="18px"]::before {
+    content: '18px';
+  }
+  .ql-picker-item[data-value="18px"]::before {
+    font-size: 18px;
+  }
+
+  .ql-picker-label[data-value="20px"]::before,
+  .ql-picker-item[data-value="20px"]::before {
+    content: '20px';
+  }
+  .ql-picker-item[data-value="20px"]::before {
+    font-size: 20px;
+  }
+
+  .ql-picker-label[data-value="24px"]::before,
+  .ql-picker-item[data-value="24px"]::before {
+    content: '24px';
+  }
+  .ql-picker-item[data-value="24px"]::before {
+    font-size: 24px;
+  }
+
+  .ql-picker-label[data-value="30px"]::before,
+  .ql-picker-item[data-value="30px"]::before {
+    content: '30px';
+  }
+  .ql-picker-item[data-value="30px"]::before {
+    font-size: 30px;
+  }
+
+  .ql-picker-label[data-value="36px"]::before,
+  .ql-picker-item[data-value="36px"]::before {
+    content: '36px';
+  }
+  .ql-picker-item[data-value="36px"]::before {
+    font-size: 36px;
+  }
+
+  .ql-picker-label[data-value="48px"]::before,
+  .ql-picker-item[data-value="48px"]::before {
+    content: '48px';
+  }
+  .ql-picker-item[data-value="48px"]::before {
+    font-size: 48px;
+  }
+
+  .ql-picker-label[data-value="56px"]::before,
+  .ql-picker-item[data-value="56px"]::before {
+    content: '56px';
+  }
+  .ql-picker-item[data-value="56px"]::before {
+    font-size: 56px;
+  }
+
+  .ql-picker-label[data-value="64px"]::before,
+  .ql-picker-item[data-value="64px"]::before {
+    content: '64px';
+  }
+  .ql-picker-item[data-value="64px"]::before {
+    font-size: 64px;
+  }
+}
+
+.ql-snow .ql-picker.ql-font {
+  .ql-picker-label[data-value="'Microsoft Yahei', 'PingFang SC', 'Source Han Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"]::before,
+  .ql-picker-item[data-value="'Microsoft Yahei', 'PingFang SC', 'Source Han Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"]::before {
+    content: '黑体';
+  }
+  .ql-picker-item[data-value="'Microsoft Yahei', 'PingFang SC', 'Source Han Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"]::before {
+    font-family: 'Microsoft Yahei', 'PingFang SC', 'Source Han Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  .ql-picker-label[data-value="'SimSun', 'STSong', 'Source Han Serif SC', 'Georgia', serif"]::before,
+  .ql-picker-item[data-value="'SimSun', 'STSong', 'Source Han Serif SC', 'Georgia', serif"]::before {
+    content: '宋体';
+  }
+  .ql-picker-item[data-value="'SimSun', 'STSong', 'Source Han Serif SC', 'Georgia', serif"]::before {
+    font-family: 'SimSun', 'STSong', 'Source Han Serif SC', 'Georgia', serif;
+  }
+
+  .ql-picker-label[data-value="楷体,楷体_GB2312"]::before,
+  .ql-picker-item[data-value="楷体,楷体_GB2312"]::before {
+    content: '楷体';
+  }
+  .ql-picker-item[data-value="楷体,楷体_GB2312"]::before {
+    font-family: "楷体","楷体_GB2312";
+  }
+
+  .ql-picker-label[data-value="Yuanti SC,YouYuan"]::before,
+  .ql-picker-item[data-value="Yuanti SC,YouYuan"]::before {
+    content: '幼圆';
+  }
+  .ql-picker-item[data-value="Yuanti SC,YouYuan"]::before {
+    font-family: "Yuanti SC","YouYuan";
+  }
+
+  .ql-picker-label[data-value="STFangsong,FangSong"]::before,
+  .ql-picker-item[data-value="STFangsong,FangSong"]::before {
+    content: '仿宋';
+  }
+  .ql-picker-item[data-value="STFangsong,FangSong"]::before {
+    font-family: "STFangsong","FangSong";
+  }
+
+  .ql-picker-label[data-value="Consolas,monospace"]::before,
+  .ql-picker-item[data-value="Consolas,monospace"]::before {
+    content: '等宽';
+  }
+  .ql-picker-item[data-value="Consolas,monospace"]::before {
+    font-family: Consolas,monospace;
+  }
+}
